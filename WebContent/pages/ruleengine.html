@@ -39,7 +39,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header"> 
-                <a class="navbar-brand" href="main.html">Control Panel</a>
+                <a class="navbar-brand" href="index.html">Control Panel</a>
             </div>
 
             <div class="navbar-default sidebar" role="navigation">
@@ -103,24 +103,40 @@
                                         </div>
                                         <br/>
                                     	<div class="form-group input-group">
-                                    		<span class="input-group-addon">Stop</span>
-                                            <input type="text" class="form-control" value="/stop">
+                                    		<span class="input-group-addon">@GET</span>
+                                            <input type="text" class="form-control" value="/rule/">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group">
-                                    		<span class="input-group-addon">Start</span>
-                                            <input type="text" class="form-control" value="/start">
+                                    		<span class="input-group-addon">@GET</span>
+                                            <input type="text" class="form-control" value="/rule/{rule-id}">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group">
-                                    		<span class="input-group-addon">Set</span>
-                                            <input type="text" class="form-control" value="?intval=1&clientCount=1">
+                                    		<span class="input-group-addon">@POST</span>
+                                            <input type="text" class="form-control" value="/rule/">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                </button>                                                
+                                            </span>                                            
+                                        </div>
+                                        <div class="form-group input-group">
+                                    		<span class="input-group-addon">@PUT</span>
+                                            <input type="text" class="form-control" value="/{rule-id}">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                </button>                                                
+                                            </span>                                            
+                                        </div>
+                                        <div class="form-group input-group">
+                                    		<span class="input-group-addon">@DELETE</span>
+                                            <input type="text" class="form-control" value="/api/rule/{rule-id}">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
                                                 </button>                                                

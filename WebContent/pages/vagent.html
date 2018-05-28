@@ -39,7 +39,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header"> 
-                <a class="navbar-brand" href="main.html">Control Panel</a>
+                <a class="navbar-brand" href="index.html">Control Panel</a>
             </div>
 
             <div class="navbar-default sidebar" role="navigation">
@@ -102,8 +102,16 @@
                                             <input type="text" class="form-control" value="http://13.124.71.203:3333/api" id="SERVER_INPUT_IP">                                        
                                         </div>
                                         <br/>
+                                        <div class="form-group input-group" id="VAGENT_GET_DIV">
+                                    		<span class="input-group-addon">@GET</span>
+                                            <input type="text" class="form-control" value="/" id="SERVER_INPUT_GET">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" id="VAGENT_BTN_GET" type="button"><i class="fa fa-share"></i>
+                                                </button>                                                
+                                            </span>                                            
+                                        </div>
                                     	<div class="form-group input-group" id="VAGENT_STOP_DIV">
-                                    		<span class="input-group-addon">Stop</span>
+                                    		<span class="input-group-addon">@POST</span>
                                             <input type="text" class="form-control" value="/stop" id="SERVER_INPUT_STOP">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" id="VAGENT_BTN_STOP" type="button"><i class="fa fa-share"></i>
@@ -111,7 +119,7 @@
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group" id="VAGENT_START_DIV">
-                                    		<span class="input-group-addon">Start</span>
+                                    		<span class="input-group-addon">@POST</span>
                                             <input type="text" class="form-control" value="/start" id="SERVER_INPUT_START">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" id="VAGENT_BTN_START"type="button"><i class="fa fa-share"></i>
@@ -119,7 +127,7 @@
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group" id="VAGENT_SET_DIV">
-                                    		<span class="input-group-addon">Set</span>
+                                    		<span class="input-group-addon">@POST</span>
                                             <input type="text" class="form-control" value="?intval=1&clientCount=1" id="SERVER_INPUT_SET">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" id="VAGENT_BTN_SET" type="button"><i class="fa fa-share"></i>
