@@ -17,6 +17,7 @@ $(function() {
 function InfluxdbUi() {
 	
 	this.init = function (){
+	
 		$("iframe").hide();
 
 	};

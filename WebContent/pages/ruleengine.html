@@ -99,46 +99,46 @@
                                     <form role="form">
                                     <div class="form-group input-group">
                                     		<span class="input-group-addon">ServerIP</span>
-                                            <input type="text" class="form-control" value="http://127.0.0.1:3333/api">                                        
+                                            <input type="text" class="form-control" value="http://127.0.0.1:3333/api" id="SERVER_INPUT_IP">                                        
                                         </div>
                                         <br/>
                                     	<div class="form-group input-group">
                                     		<span class="input-group-addon">@GET</span>
-                                            <input type="text" class="form-control" value="/rule/">
+                                            <input type="text" class="form-control" value="/rule/" id="SERVER_INPUT_GET_LIST">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                <button class="btn btn-default" type="button" id="BTN_GET_LIST"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group">
                                     		<span class="input-group-addon">@GET</span>
-                                            <input type="text" class="form-control" value="/rule/{rule-id}">
+                                            <input type="text" class="form-control" value="/rule/{rule-id}" id="SERVER_INPUT_GET_DETAIL">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                <button class="btn btn-default" type="button" id="BTN_GET_DETAIL"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group">
                                     		<span class="input-group-addon">@POST</span>
-                                            <input type="text" class="form-control" value="/rule/">
+                                            <input type="text" class="form-control" value="/rule/" id="SERVER_INPUT_POST">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                <button class="btn btn-default" type="button" id="BTN_POST"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group">
                                     		<span class="input-group-addon">@PUT</span>
-                                            <input type="text" class="form-control" value="/{rule-id}">
+                                            <input type="text" class="form-control" value="/{rule-id}" id="SERVER_INPUT_PUT">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                <button class="btn btn-default" type="button" id="BTN_PUT"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
                                         <div class="form-group input-group">
                                     		<span class="input-group-addon">@DELETE</span>
-                                            <input type="text" class="form-control" value="/api/rule/{rule-id}">
+                                            <input type="text" class="form-control" value="/api/rule/{rule-id}" id="SERVER_INPUT_DELETE">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-share"></i>
+                                                <button class="btn btn-default" type="button" id="BTN_DELETE"><i class="fa fa-share"></i>
                                                 </button>                                                
                                             </span>                                            
                                         </div>
@@ -179,6 +179,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/ruleengine.js"></script>
 
 </body>
 

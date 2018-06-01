@@ -3,9 +3,9 @@
  */
 
 $(function() {
-	var vagent = new Vagent();
+	var ruleengine = new Ruleengine();
 	
-	vagent.addEvent();
+	ruleengine.addEvent();
 	
 	
 
@@ -20,9 +20,10 @@ $(function() {
 });
 
 
-function Vagent() {
+function Ruleengine() {
 	
 	this.addEvent = function (){
+		
 		$(".btn-default").click(function(){
 			var itemBox = $(this).parent().parent();
 			var inpuxVal = $(this).parent().prev().val();
